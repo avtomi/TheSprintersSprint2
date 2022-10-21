@@ -17,6 +17,12 @@ public class Game {
 		startGame();
 	}
 	
+	public void outputNewPlayerPosition() {
+		System.out.println("Your new position is: ("
+                + this.playerPositionX + ", "  
+                + this.playerPositionY + ")");
+	}
+	
 	public void startGame() {
 		System.out.println("Welcome to our Coordinate game!");
 		System.out.println("Your starting position is (0,0");
@@ -34,8 +40,32 @@ public class Game {
 			switch(input.toLowerCase()) {
 				case "left":
 					this.playerPositionX--;
-				System.out.println("Your new position is: " + this.playerPositionX + ", " + this.playerPositionY);
+					outputNewPlayerPosition();
+			    
+				break;
+				case "right":
+					this.playerPositionX++;
+					outputNewPlayerPosition();
+			    break;
+			    
+				case "down":
+					this.playerPositionY--;
+					outputNewPlayerPosition();
+				break;
+				
+				case "up":
+					this.playerPositionY++;
+					outputNewPlayerPosition();
+			    break;
+			    
+				case "exit":
+					this.isRunning = false;
+					break;
+				
+				default:
+					System.out.println("Invalid command.");
 			}
+			
 		} while (isRunning);
 	}
 	
