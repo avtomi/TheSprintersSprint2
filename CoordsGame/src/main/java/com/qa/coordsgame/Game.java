@@ -22,6 +22,9 @@ public class Game {
 		System.out.println("Your starting position is (0,0");
 		System.out.println("The goal can be found at position (" + this.goalPositionX + ", "
 				+ this.goalPositionY + ")");
+		System.out.println("You can move arround by using the commands LEFT, RIGHT, UP, DOWN.");
+        System.out.println("You can terminate the game by typing EXIT.");
+        System.out.println();
 		
 		do {
 			//UserInput = new UserInput()
