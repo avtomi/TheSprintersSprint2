@@ -23,6 +23,14 @@ public class Game {
                 + this.playerPositionY + ")");
 	}
 	
+	public boolean playerReachedTheGoal() {
+		if (this.playerPositionX == this.goalPositionX 
+				&& this.playerPositionY == this.goalPositionY) {
+			return true;
+		}
+		return false;
+	}
+	
 	public void startGame() {
 		System.out.println("Welcome to our Coordinate game!");
 		System.out.println("Your starting position is (0,0");
@@ -41,21 +49,33 @@ public class Game {
 				case "left":
 					this.playerPositionX--;
 					outputNewPlayerPosition();
+					if (playerReachedTheGoal()) {
+						System.out.println("You've reached the goal!");
+					}
 			    
 				break;
 				case "right":
 					this.playerPositionX++;
 					outputNewPlayerPosition();
+					if (playerReachedTheGoal()) {
+						System.out.println("You've reached the goal!");
+					}
 			    break;
 			    
 				case "down":
 					this.playerPositionY--;
 					outputNewPlayerPosition();
+					if (playerReachedTheGoal()) {
+						System.out.println("You've reached the goal!");
+					}
 				break;
 				
 				case "up":
 					this.playerPositionY++;
 					outputNewPlayerPosition();
+					if (playerReachedTheGoal()) {
+						System.out.println("You've reached the goal!");
+					}
 			    break;
 			    
 				case "exit":
