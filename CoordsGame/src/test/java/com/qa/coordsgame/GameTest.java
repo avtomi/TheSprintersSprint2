@@ -9,8 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class GameTest {
-    Game game;
-    UserInput input;
+
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 	}
@@ -21,8 +20,6 @@ class GameTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		input = new UserInput();
-		game = new Game(input);
 	}
 
 	@AfterEach
@@ -30,8 +27,8 @@ class GameTest {
 	}
 
 	@Test
-	void testReachGoal() {
-
+	void test() {
+		fail("Not yet implemented");
 	}
 
 }
