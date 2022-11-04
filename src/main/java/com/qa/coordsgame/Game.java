@@ -73,7 +73,7 @@ public class Game {
 	 
 	 public void startGame() {
 		 int[] treasurePosition = gameTreasure.getPosition();
-		 System.out.println("Welcome to our Coordinate Game!");
+		 System.out.println("Welcome to our Coordinate Game (Version 2.0)!");
 		 System.out.println("Your starting position is (" + 
 		                     this.playerPositionX + ", " + 
 				             this.playerPositionY + ")");
