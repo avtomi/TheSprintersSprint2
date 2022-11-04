@@ -18,7 +18,6 @@ pipeline {
     }
     stage('Build') {
       steps {
-        #sh "mvn -DskipTests=true clean package"
         sh "docker build -t coordsgameimg ."
       }
     }
