@@ -83,7 +83,8 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>com.qa.coordsgame.Runner</mainClass>
+                                   <addClasspath>true</addClasspath>
+					<mainClass>com.qa.coordsgame.Runner</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
