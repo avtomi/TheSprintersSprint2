@@ -18,6 +18,7 @@ pipeline {
     }
     stage('Build') {
       steps {
+        sh "docker rmi coordsgameimg -f"
         sh "docker build -t coordsgameimg ."
       }
     }
